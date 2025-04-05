@@ -94,7 +94,7 @@ void bubbleSort(int data[], int n) {
 
 /*
 Time Complexity:
-- Best Case (Already Sorted): O(n)
+- Best Case (Already Sorted):O(n^2) can be improved to O(n)
 In the best case, the array is already sorted, so no swaps are needed.
 To optimize for this case, we can introduce a flag to check if any swaps
 occurred during a pass. If no swaps are made, the algorithm can terminate early.
