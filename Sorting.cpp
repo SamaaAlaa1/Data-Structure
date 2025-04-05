@@ -445,8 +445,10 @@ Time Complexity:
 Where n is the number of elements and k is the number of buckets.
 
 Notes:
-This implementation avoids using vectors and uses dynamically allocated arrays instead.
-It is effective for uniformly distributed data over a range.
+- The performance of bucket sort depends on the distribution of the input data and the number of buckets.
+- It is not a comparison-based sorting algorithm and works well for floating-point numbers or integers within a specific range.
+- The choice of the number of buckets and the method used to sort individual buckets can significantly affect its efficiency.
+- Bucket sort is not suitable for datasets with a large range of values or non-uniform distributions.
 */
 int main(){
 
