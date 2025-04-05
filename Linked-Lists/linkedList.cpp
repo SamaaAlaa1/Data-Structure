@@ -1,6 +1,16 @@
 #include <iostream>
 using namespace std;
+/*
+Ways to build linked lists:
+Forward
+New node always inserted at end of the linked list
 
+Backward
+New node always inserted at the beginning of the list
+/////////////////////////////
+Two types of linked lists: sorted, unsorted
+
+*/
 // Node structure for the linked list
 struct Node {
     int data;       // Data part of the node
@@ -43,7 +53,7 @@ public:
     }
 
     // Function to add a node at the end of the list
-    void append(int value) {
+    void insert(int value) {
         Node* newNode = new Node(value);
         if (head == nullptr) {
             head = newNode; // If the list is empty, set head to the new node
@@ -64,6 +74,10 @@ public:
             temp = temp->next;
         }
         cout << "nullptr" << endl;
+    }
+
+    Node* getHead() {
+        return head;
     }
 
     // Function to delete a node by value
@@ -90,20 +104,36 @@ public:
     }
 };
 
-// Main function to demonstrate the LinkedList class
+
 int main() {
     LinkedList list;
 
-    list.append(10);
-    list.append(20);
-    list.append(30);
+    list.insert(92);  
+    list.insert(63);  
+    list.insert(75);  
 
     cout << "Linked List: ";
     list.display();
 
-    list.deleteNode(20);
-    cout << "After deleting 20: ";
-    list.display();
+    Node* current = list.getHead();      // current = node with data 92
+    Node* head = current->next;          // head = node with data 63 (like head = current->link)
+
+
+    cout << "current->data: " << current->data << endl; // 92
+    cout << "current->next->data: " << current->next->data << endl; // 63
+    cout << "head->data: " << head->data << endl; // 63
+    cout << "head->next->data: " << head->next->data << endl; // 75
+
+    if (head->next->next == nullptr) {
+        cout << "head->next->next: nullptr (end of list)" << endl;
+    }
+
+    Node* last = head->next->next;
+    if (last != nullptr && last->next != nullptr) {
+        cout << "head->next->next->data: " << last->next->data << endl;
+    } else {
+        cout << "head->next->next->next: nullptr (does not exist)" << endl;
+    }
 
     return 0;
 }
