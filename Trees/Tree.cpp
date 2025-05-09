@@ -178,6 +178,7 @@ public:
         root = deleteNode(root, value);
     }
 
+public:
     // Constructor to initialize an empty BST
     BST()
     {

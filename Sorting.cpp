@@ -130,10 +130,9 @@ void optimizedBubbleSort(int data[], int n) {
 /*Comparison of Quadratic Sorts
 Bubble Sort, Selection Sort, and Insertion Sort are all O(n2)
 As we will see later, we can do much better than this with
-somewhat more complicated sorting algorithms Within O(n2),
+somewhat more complicated sorting algorithms Within O(n^2),
 
--Bubble Sort is very slow, and should probably never be
-used for anything
+-Bubble Sort is very slow, and should probably never be used for anything
 
 -Selection Sort is intermediate in speed
 
@@ -261,7 +260,7 @@ int partition(int data[], int left, int right) {
     for (int j = left + 1; j <= right; j++) {
         if (data[j] < pivot) {
             i++; // Move the index for smaller elements
-            swap(data[i], data[j]); // Swap the current element with the element at i
+            swap(data[i], data[j]); // Swap the current element    with the element at i
         }
     }
     // Swap the pivot element into its correct position
