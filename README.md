@@ -15,13 +15,6 @@ A comprehensive collection of data structure implementations with detailed comme
 | **Stacks**     | [Stack Implementations](Stack/), [Stack Usage Examples](Stack/Stack_usage_example) |
 | **Arrays**     | [Array-Based List](Array-Based-List.cpp) |
 
-## ✨ Features
-
-- 🧠 **Detailed Explanations**: Every algorithm comes with comprehensive comments
-- 🎯 **Visual Examples**: GIFs and diagrams to illustrate key concepts
-- ⚡ **Optimized Code**: Production-ready implementations with edge cases handled
-- 🔍 **Complexity Analysis**: Time and space complexity for every operation
-
 ## 🚀 Quick Start
 
 ```bash
