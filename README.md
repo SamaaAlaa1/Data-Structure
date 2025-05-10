@@ -1,50 +1,50 @@
-# 📚 Data Structures
+# 📚 Data Structures in C++
 
 ![Data Structures Banner](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW1pZ3RqYzVtZ3B6Y2R5d2x6dGJ6Z2V4eGJ6dHp0ZzZ1bmRmaWZ1biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif)
 
-A comprehensive collection of data structure implementations with detailed comments and explanations. Perfect for learning and interview preparation!
+A comprehensive collection of fundamental data structure implementations in *C++, with detailed comments and example use cases. Perfect for **learning, **university projects, and **interview preparation*.
 
-## What's Inside
+---
+
+## 📂 What’s Inside
 
 ### 🕒 Complexity Analysis
-- [Time Complexity](Complexity.cpp)
+- [Complexity.cpp](Complexity.cpp): Understand time complexity fundamentals.
 
 ### 🔗 Linked Lists
-- [Singly Linked List](Linked-Lists/linkedList.cpp)
-- [Doubly Linked List](Linked-Lists/Doubly-Linked-List.cpp)
-- [Circular Linked List](Linked-Lists/Circular-Linked-List.cpp)
+- [linkedList.cpp](Linked-Lists/linkedList.cpp): Singly Linked List
+- [Doubly-Linked-List.cpp](Linked-Lists/Doubly-Linked-List.cpp): Doubly Linked List
+- [Circular-Linked-List.cpp](Linked-Lists/Circular-Linked-List.cpp): Circular Linked List
 
 ### 🌳 Trees
-- [Binary Trees](Trees/Tree.cpp)
-- [Tree Balancing Algorithms](Trees/treeBalancing.cpp)
+- [Tree.cpp](Trees/Tree.cpp): Binary Trees
+- [treeBalancing.cpp](Trees/treeBalancing.cpp): Tree Balancing Techniques
 
 ### 🔄 Sorting
-- [Quadratic Sorts](Sorting/quadratic_sorts.cpp)
-- [Efficient Sorts](Sorting/efficient_sorts.cpp)
-- [Heap Sort](Sorting/heap_sort.cpp)
-- [Non-Comparison Sorts](Sorting/non_comparison_sorts.cpp)
+- [quadratic_sorts.cpp](Sorting/quadratic_sorts.cpp): Bubble, Selection, Insertion
+- [efficient_sorts.cpp](Sorting/efficient_sorts.cpp): Merge Sort, Quick Sort
+- [heap_sort.cpp](Sorting/heap_sort.cpp): Heap Sort
+- [non_comparison_sorts.cpp](Sorting/non_comparison_sorts.cpp): Counting Sort, Radix Sort
 
 ### 🛠️ Queues
-- [Standard Queue](Queue/queue.cpp)
-- [Priority Queue](Queue/priority_queue.cpp)
+- [queue.cpp](Queue/queue.cpp): Standard Queue
+- [priority_queue.cpp](Queue/priority_queue.cpp): Priority Queue
 
 ### 📚 Stacks
-- [Stack Implementations](Stack/stack.cpp)
-- [Stack Usage Examples](Stack/Stack_usage_example)
+- [stack.cpp](Stack/stack.cpp) & [stack.h](Stack/stack.h): Core Stack Implementation
+- Stack_usage_example/
+  - [Bracket_delimiters_checking.cpp](Stack/Stack_usage_example/Bracket_delimiters_checking.cpp)
+  - [big_int_addition.cpp](Stack/Stack_usage_example/big_int_addition.cpp)
+  - [postfix.cpp](Stack/Stack_usage_example/postfix.cpp)
 
 ### 📋 Arrays
-- [Array-Based List](Array-Based-List.cpp)
+- [Array-Based-List.cpp](Array-Based-List.cpp): Static List Using Arrays
 
-## 🚀 Quick Start
+---
+
+## 🚀 Getting Started
 
 ```bash
 git clone https://github.com/SamaaAlaa1/Data-Structure.git
 cd Data-Structure
-```
 
-### 🎉 You're All Set!
-Explore the code, run the examples, and level up your data structure skills. Whether you're preparing for interviews or just geeking out, this repo has got you covered.
-
-💡 **Pro Tip:** Start with the `README.md` to get an overview, then jump into the folder of your choice. Don't forget to experiment and have fun!
-
-Happy Coding! 🚀✨
