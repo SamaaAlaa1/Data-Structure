@@ -53,7 +53,7 @@ public:
     }
 
     // Function to add a node at the end of the list
-    void insert(int value) {
+    void insertAtEnd(int value) {
         Node* newNode = new Node(value);
         if (head == nullptr) {
             head = newNode; // If the list is empty, set head to the new node
@@ -63,6 +63,36 @@ public:
                 temp = temp->next; // Traverse to the end of the list
             }
             temp->next = newNode; // Link the last node to the new node
+        }
+    }
+    
+    // Function to add a node at the beginning of the list
+    void insertAtBeginning(int value) {
+        Node* newNode = new Node(value);
+        newNode->next = head; // Point the new node to the current head
+        head = newNode;       // Update head to the new node
+    }
+
+    // Function to insert a node at a specific position
+    void insertAt(int value, int position) {
+        if (position <= 0) {
+            insertAtBeginning(value); // Insert at the beginning if position is 0 or negative
+            return;
+        }
+
+        Node* newNode = new Node(value);
+        Node* current = head;
+
+        // Traverse to the node just before the desired position
+        for (int i = 0; i < position - 1 && current != nullptr; i++) {
+            current = current->next;
+        }
+
+        if (current == nullptr) {
+            insertAtEnd(value); // If position is beyond the end, insert at the end
+        } else {
+            newNode->next = current->next; // Link the new node to the next node
+            current->next = newNode;       // Link the previous node to the new node
         }
     }
 
@@ -108,9 +138,9 @@ public:
 int main() {
     LinkedList list;
 
-    list.insert(92);  
-    list.insert(63);  
-    list.insert(75);  
+    list.insertAtEnd(92);  
+    list.insertAtEnd(63);  
+    list.insertAtEnd(75);  
 
     cout << "Linked List: ";
     list.display();
